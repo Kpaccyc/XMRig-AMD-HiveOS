@@ -8,6 +8,25 @@ Used manual at https://github.com/minershive/hiveos-linux/tree/master/hive/custo
 
 * Binary releases https://github.com/Kpaccyc/XMRig-AMD-HiveOS/releases/tag/v2.7.3-beta
 
+### Usage
+Fill the fields as follows:
+* Custom miner name:
+```xmrig-amd```
+* Installation URL:
+```Use link from section```
+* Wallet and worker template:
+```%DWAL%```
+* Pool URL:
+```You'r pool ORL and port```
+* Pass:
+```Check you'r pool settings```
+* Extra config arguments:
+``` -a (algo) -k --opencl-devices=(you devices ID) --opencl-launch=(intensity(x)worksize)```
+
+![hive](https://user-images.githubusercontent.com/41443179/42968206-4b1f21e4-8bab-11e8-9faa-397a173b1b38.jpg)
+
+
+
 ### Excta config arguments:
 
 ```json
