@@ -13,7 +13,7 @@ Fill the fields as follows:
 * Custom miner name:
 ```xmrig-amd```
 * Installation URL:
-```Use link from section```
+```Use link from download section```
 * Wallet and worker template:
 ```%DWAL%```
 * Pool URL:
