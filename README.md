@@ -11,7 +11,7 @@ Used manual at https://github.com/minershive/hiveos-linux/tree/master/hive/custo
 ### Excta config arguments:
 
 ```json
--a, --algo=ALGO       cryptonight (default) cryptonight-lite or cryptonight-heavy
+-a                    cryptonight (default) cryptonight-lite or cryptonight-heavy
 --variant             specificy the PoW variat to use: -> auto (default), 0 (v0), 1 (v1, aka monerov7, aeonv7), tube (ipbc), alloy, xtl (including autodetect for v5), msr, xhv, rto
 --opencl-devices=N    list of OpenCL devices to use.
 --opencl-launch=IxW   list of launch config, intensity and worksize
