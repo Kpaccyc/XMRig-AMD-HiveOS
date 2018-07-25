@@ -43,7 +43,7 @@ All configuration commands are entered sequentially as to start the miner from t
 
 
 ### Donations
-Default donation 1% (1 minute in 100 minutes) can be adjusted via command line option --donate-level
+Default donation 5% (5 minutes in 100 minutes) can be adjusted via command line option --donate-level
 
 * Kpaccyc:
 
