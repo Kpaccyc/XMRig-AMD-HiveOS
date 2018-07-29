@@ -13,7 +13,7 @@ Fill the fields as follows:
 * Custom miner name:
 ```xmrig-amd```
 * Installation URL:
-```Use link from download section```
+```https://github.com/Kpaccyc/XMRig-AMD-HiveOS/releases/download/v2.7.3-beta/xmrig-amd.tar.gz```
 * Wallet and worker template:
 ```%DWAL%```
 * Pool URL:
