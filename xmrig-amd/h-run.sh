@@ -20,11 +20,5 @@ export LD_LIBRARY_PATH=/hive/xmr-stak/fireice-uk
 CUSTOM_LOG_BASEDIR=`dirname "$CUSTOM_LOG_BASENAME"`
 [[ ! -d $CUSTOM_LOG_BASEDIR ]] && mkdir -p $CUSTOM_LOG_BASEDIR
 
-if [ $(dpkg-query -W -f='${Status}' libmicrohttpd-dev 2>/dev/null | grep -c "ok installed") -eq 0 ];
-then
-  apt-get update;
-  apt-get install libmicrohttpd-dev -y;
-fi
-
 cd /hive/custom/$CUSTOM_MINER
 ./xmrig-amd --api-port=60050 $(< /hive/custom/$CUSTOM_NAME/config.conf) $@ 2>&1 | tee $CUSTOM_LOG_BASENAME.log
