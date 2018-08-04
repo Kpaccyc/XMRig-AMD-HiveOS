@@ -7,7 +7,7 @@ cd `dirname $0`
 #. /hive-config/wallet.conf
 #[[ -z $CUSTOM_MINER ]] && echo -e "${RED}No CUSTOM_MINER is set${NOCOLOR}" && exit 1
 #. /hive/custom/$CUSTOM_MINER/h-manifest.conf
-
+export LD_LIBRARY_PATH=/hive/xmr-stak/fireice-uk
 . h-manifest.conf
 
 #echo $CUSTOM_MINER
