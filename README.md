@@ -10,12 +10,14 @@ Used manual at https://github.com/minershive/hiveos-linux/tree/master/hive/custo
 
 ### Usage
 Fill the fields as follows:
-* Custom miner name:
+* Miner name:
 ```xmrig-amd```
 * Installation URL:
 ```https://github.com/Kpaccyc/XMRig-AMD-HiveOS/releases/download/v2.7.3-beta/xmrig-amd.tar.gz```
+* Hash algorithm:
+```Chose coin algo```
 * Wallet and worker template:
-```%DWAL%```
+```%WAL%```
 * Pool URL:
 ```You'r pool ORL and port```
 * Pass:
@@ -23,7 +25,7 @@ Fill the fields as follows:
 * Extra config arguments:
 ``` -a (algo) -k --opencl-devices=(you devices ID) --opencl-launch=(intensity(x)worksize)```
 
-![hive](https://user-images.githubusercontent.com/41443179/42968206-4b1f21e4-8bab-11e8-9faa-397a173b1b38.jpg)
+![image](https://user-images.githubusercontent.com/41443179/44172759-c2726800-a0e6-11e8-83ef-441791872ac4.png)
 
 
 
