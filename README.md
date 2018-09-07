@@ -11,7 +11,7 @@ Used manual at https://github.com/minershive/hiveos-linux/tree/master/hive/custo
 ### Usage
 Fill the fields as follows:
 * Miner name:
-```xmrig-amd```
+```xmrigamd```
 * Installation URL:
 ```https://github.com/Kpaccyc/XMRig-AMD-HiveOS/releases/download/Release/xmrigamd.tar.gz```
 * Hash algorithm:
