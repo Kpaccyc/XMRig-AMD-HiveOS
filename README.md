@@ -25,7 +25,7 @@ Fill the fields as follows:
 * Extra config arguments:
 ``` -a (algo) -k --opencl-devices=(you devices ID) --opencl-launch=(intensity(x)worksize)```
 
-![image](https://user-images.githubusercontent.com/41443179/45200663-801df000-b27a-11e8-9487-d91e4839c25f.png)
+![image](https://user-images.githubusercontent.com/41443179/45201110-9036cf00-b27c-11e8-9bd2-b40556f6cee4.png)
 
 
 
