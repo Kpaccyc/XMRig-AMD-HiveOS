@@ -6,14 +6,14 @@ Used manual at https://github.com/minershive/hiveos-linux/tree/master/hive/custo
 
 ### Download
 
-* Binary releases https://github.com/Kpaccyc/XMRig-AMD-HiveOS/releases/tag/v2.7.3-beta
+* Binary releases https://github.com/Kpaccyc/XMRig-AMD-HiveOS/releases
 
 ### Usage
 Fill the fields as follows:
 * Miner name:
 ```xmrig-amd```
 * Installation URL:
-```https://github.com/Kpaccyc/XMRig-AMD-HiveOS/releases/download/v2.7.3-beta/xmrig-amd.tar.gz```
+```https://github.com/Kpaccyc/XMRig-AMD-HiveOS/releases/download/Release/xmrigamd.tar.gz```
 * Hash algorithm:
 ```Chose coin algo```
 * Wallet and worker template:
@@ -25,7 +25,7 @@ Fill the fields as follows:
 * Extra config arguments:
 ``` -a (algo) -k --opencl-devices=(you devices ID) --opencl-launch=(intensity(x)worksize)```
 
-![image](https://user-images.githubusercontent.com/41443179/44173084-a0c5b080-a0e7-11e8-99ee-b8a19f4a69fb.png)
+![image](https://user-images.githubusercontent.com/41443179/45200663-801df000-b27a-11e8-9487-d91e4839c25f.png)
 
 
 
