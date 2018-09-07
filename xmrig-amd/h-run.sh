@@ -3,7 +3,7 @@ cd `dirname $0`
 
 [ -t 1 ] && . colors
 
-#CUSTOM_MINER="xmrig-amd"
+#CUSTOM_MINER="xmrigamd"
 #. /hive-config/wallet.conf
 #[[ -z $CUSTOM_MINER ]] && echo -e "${RED}No CUSTOM_MINER is set${NOCOLOR}" && exit 1
 #. /hive/custom/$CUSTOM_MINER/h-manifest.conf
