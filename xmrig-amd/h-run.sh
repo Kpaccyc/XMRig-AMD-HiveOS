@@ -7,8 +7,6 @@ cd `dirname $0`
 #. /hive-config/wallet.conf
 #[[ -z $CUSTOM_MINER ]] && echo -e "${RED}No CUSTOM_MINER is set${NOCOLOR}" && exit 1
 #. /hive/custom/$CUSTOM_MINER/h-manifest.conf
-export LD_LIBRARY_PATH=/hive/xmr-stak/fireice-uk
-. h-manifest.conf
 
 #echo $CUSTOM_MINER
 #echo $CUSTOM_LOG_BASENAME
@@ -19,6 +17,12 @@ export LD_LIBRARY_PATH=/hive/xmr-stak/fireice-uk
 [[ ! -f $CUSTOM_CONFIG_FILENAME ]] && echo -e "${RED}Custom config ${YELLOW}$CUSTOM_CONFIG_FILENAME${RED} is not found${NOCOLOR}" && exit 1
 CUSTOM_LOG_BASEDIR=`dirname "$CUSTOM_LOG_BASENAME"`
 [[ ! -d $CUSTOM_LOG_BASEDIR ]] && mkdir -p $CUSTOM_LOG_BASEDIR
+
+if [ $(dpkg-query -W -f='${Status}' libmicrohttpd-dev 2>/dev/null | grep -c "ok installed") -eq 0 ];
+then
+  apt-get update;
+  apt-get install libmicrohttpd-dev -y;
+fi
 
 cd /hive/custom/$CUSTOM_MINER
 ./xmrig-amd --api-port=60050 $(< /hive/custom/$CUSTOM_NAME/config.conf) $@ 2>&1 | tee $CUSTOM_LOG_BASENAME.log
