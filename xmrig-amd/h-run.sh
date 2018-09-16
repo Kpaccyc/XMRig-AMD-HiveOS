@@ -25,4 +25,9 @@ then
 fi
 
 cd /hive/custom/$CUSTOM_MINER
+export GPU_FORCE_64BIT_PTR=1
+export GPU_USE_SYNC_OBJECTS=1
+export GPU_MAX_ALLOC_PERCENT=100
+export GPU_SINGLE_ALLOC_PERCENT=100
+export GPU_MAX_HEAP_SIZE=100
 ./xmrig-amd --api-port=60050 $(< /hive/custom/$CUSTOM_NAME/config.conf) $@ 2>&1 | tee $CUSTOM_LOG_BASENAME.log
