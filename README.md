@@ -2,11 +2,17 @@
 Used manual at https://github.com/minershive/hiveos-linux/tree/master/hive/custom/
 
 ### Current XMRig-AMD version
-* 2.7.3-beta https://github.com/xmrig/xmrig-amd/releases/tag/v2.7.3-beta
+* 2.8.0-rc https://github.com/xmrig/xmrig-amd/releases/tag/v2.8.0-rc
 
 ### Download
 
 * Binary releases https://github.com/Kpaccyc/XMRig-AMD-HiveOS/releases
+
+### Upgrade
+* run at console
+custom-get https://github.com/Kpaccyc/XMRig-AMD-HiveOS/releases/download/Release/xmrigamd.tar.gz -f
+
+![image](https://user-images.githubusercontent.com/41443179/46308860-6e064780-c5c3-11e8-9536-215d94c82325.png)
 
 ### Usage
 Fill the fields as follows:
