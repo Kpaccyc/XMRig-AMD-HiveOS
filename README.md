@@ -37,14 +37,19 @@ Fill the fields as follows:
 ### Excta config arguments:
 
 ```json
--a                    cryptonight (default) cryptonight-lite or cryptonight-heavy
---variant             specificy the PoW variat to use: -> auto (default), 0 (v0), 1 (v1, aka monerov7, aeonv7), tube (ipbc), alloy, xtl (including autodetect for v5), msr, xhv, rto
---opencl-devices=N    list of OpenCL devices to use.
---opencl-launch=IxW   list of launch config, intensity and worksize
---opencl-affinity=N   affine GPU threads to a CPU
---opencl-platform=N   OpenCL platform index
---donate-level=N      donate level, default 5% (5 minutes in 100 minutes)
---nicehash            enable nicehash support
+-a                       cryptonight (default) cryptonight-lite or cryptonight-heavy
+--variant                specificy the PoW variat to use: -> auto (default), 0 (v0), 1 (v1, aka monerov7, aeonv7), tube (ipbc), alloy, xtl (including autodetect for v5), msr, xhv, rto
+--tls                    enable SSL/TLS support (needs pool support)
+--tls-fingerprint=F      pool TLS certificate fingerprint, if set enable strict certificate pinning
+--opencl-devices=N       list of OpenCL devices to use.
+--opencl-launch=IxW      list of launch config, intensity and worksize
+--opencl-strided-index=N list of strided_index option values for each thread
+--opencl-mem-chunk=N     list of mem_chunk option values for each thread
+--opencl-comp-mode=N     list of comp_mode option values for each thread
+--opencl-affinity=N      affine GPU threads to a CPU
+--opencl-platform=N      OpenCL platform index
+--donate-level=N         donate level, default 5% (5 minutes in 100 minutes)
+--nicehash               enable nicehash support
 ```
 All configuration commands are entered sequentially as to start the miner from the command line
 
