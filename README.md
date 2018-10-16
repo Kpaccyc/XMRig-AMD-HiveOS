@@ -46,6 +46,7 @@ Fill the fields as follows:
 --opencl-strided-index=N list of strided_index option values for each thread
 --opencl-mem-chunk=N     list of mem_chunk option values for each thread
 --opencl-comp-mode=N     list of comp_mode option values for each thread
+--opencl-unroll          list of unroll option values for each thread
 --opencl-affinity=N      affine GPU threads to a CPU
 --opencl-platform=N      OpenCL platform index
 --donate-level=N         donate level, default 5% (5 minutes in 100 minutes)
