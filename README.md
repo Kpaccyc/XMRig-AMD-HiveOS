@@ -9,7 +9,9 @@ Used manual at https://github.com/minershive/hiveos-linux/tree/master/hive/custo
 * Binary releases https://github.com/Kpaccyc/XMRig-AMD-HiveOS/releases
 
 ### Upgrade
+* stop miner
 * run at console ```custom-get https://github.com/Kpaccyc/XMRig-AMD-HiveOS/releases/download/Release/xmrigamd.tar.gz -f```
+* start miner
 
 ![image](https://user-images.githubusercontent.com/41443179/46308860-6e064780-c5c3-11e8-9536-215d94c82325.png)
 
