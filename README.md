@@ -51,14 +51,14 @@ Fill the fields as follows:
 --opencl-unroll          list of unroll option values for each thread
 --opencl-affinity=N      affine GPU threads to a CPU
 --opencl-platform=N      OpenCL platform index
---donate-level=N         donate level, default 5% (5 minutes in 100 minutes)
+--donate-level=N         donate level, default 1% (1 minute in 100 minutes)
 --nicehash               enable nicehash support
 ```
 All configuration commands are entered sequentially as to start the miner from the command line
 
 
 ### Donations
-Default donation 5% (5 minutes in 100 minutes) can be adjusted via command line option --donate-level
+Default donation 1% (1 minute in 100 minutes) can be adjusted via command line option --donate-level
 
 * Kpaccyc:
 
