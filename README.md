@@ -2,7 +2,7 @@
 Used manual at https://github.com/minershive/hiveos-linux/tree/master/hive/custom/
 
 ### Current XMRig-AMD version
-* 2.9.3 https://github.com/xmrig/xmrig-amd/releases/tag/v2.9.3
+* 2.9.4 https://github.com/xmrig/xmrig-amd/releases/tag/v2.9.4
 
 ### Download
 
