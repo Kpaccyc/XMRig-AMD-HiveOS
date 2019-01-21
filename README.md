@@ -41,7 +41,7 @@ Fill the fields as follows:
 
 ```json
 -a                       cryptonight (default) cryptonight-lite or cryptonight-heavy
---variant                specificy the PoW variat to use: -> auto (default), 0 (v0), 1 (v1, aka monerov7, aeonv7), tube (ipbc), alloy, xtl (including autodetect for v5), msr, xhv, rto
+--variant                specificy the PoW variat to use: -> auto (default); 0 (v0); 1 (v1, aka monerov7, aeonv7); tube (ipbc), alloy, msr, xhv, rto, half (xtl)
 --tls                    enable SSL/TLS support (needs pool support)
 --tls-fingerprint=F      pool TLS certificate fingerprint, if set enable strict certificate pinning
 --opencl-devices=N       list of OpenCL devices to use.
