@@ -2,7 +2,7 @@
 Used manual at https://github.com/minershive/hiveos-linux/tree/master/hive/custom/
 
 ### Current XMRig-AMD version
-* 2.9.4 https://github.com/xmrig/xmrig-amd/releases/tag/v2.9.4
+* 2.10.0 https://github.com/xmrig/xmrig-amd/releases/tag/v2.10.0
 
 ### Download
 
@@ -40,7 +40,7 @@ Fill the fields as follows:
 ### Excta config arguments:
 
 ```json
--a                       cryptonight (default) cryptonight-lite or cryptonight-heavy
+-a                       cryptonight (default) cryptonight-lite, cryptonight-heavy, cryptonight-turtle
 --variant                specificy the PoW variat to use: -> auto (default), 0 (v0), 1 (v1, aka monerov7, aeonv7), tube (ipbc), alloy, msr, xhv, rto, half (xtl)
 --tls                    enable SSL/TLS support (needs pool support)
 --tls-fingerprint=F      pool TLS certificate fingerprint, if set enable strict certificate pinning
