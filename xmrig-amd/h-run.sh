@@ -8,6 +8,8 @@ cd `dirname $0`
 #[[ -z $CUSTOM_MINER ]] && echo -e "${RED}No CUSTOM_MINER is set${NOCOLOR}" && exit 1
 #. /hive/custom/$CUSTOM_MINER/h-manifest.conf
 
+. h-manifest.conf
+
 #echo $CUSTOM_MINER
 #echo $CUSTOM_LOG_BASENAME
 #echo $CUSTOM_CONFIG_FILENAME
@@ -24,10 +26,10 @@ then
   apt-get install libmicrohttpd-dev -y;
 fi
 
-cd /hive/custom/$CUSTOM_MINER
+cd /hive/custom/$CUSTOM_NAME
 export GPU_FORCE_64BIT_PTR=1
 export GPU_USE_SYNC_OBJECTS=1
 export GPU_MAX_ALLOC_PERCENT=100
 export GPU_SINGLE_ALLOC_PERCENT=100
 export GPU_MAX_HEAP_SIZE=100
-./xmrig-amd --api-port=60050 $(< /hive/custom/$CUSTOM_NAME/config.conf) $@ 2>&1 | tee $CUSTOM_LOG_BASENAME.log
+./xmrig-amd --api-port=65056 $(< /hive/custom/$CUSTOM_NAME/config.conf) $@ 2>&1 | tee $CUSTOM_LOG_BASENAME.log
