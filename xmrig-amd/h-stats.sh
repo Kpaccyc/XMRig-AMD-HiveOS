@@ -9,7 +9,7 @@ khs=`echo $stats_raw | jq -r '.hashrate.total[0]' | awk '{print $1/1000}'`
 local hs_units="hs"
 local hr=`echo $threads_raw | jq -c '.threads[] | {index, hashrate}' | awk -F"," '{a[$1]+=$3}END{for(i in a) print i,a[i]}' | sort | sed -r 's/^[^ ]+//' | tr -d ' '`
 local gpu_worked=`echo $threads_raw | jq '.threads[].index' | sort | uniq`
-local gpu_busid=(`echo "$gpu_detect_json" | jq -r '[ . | to_entries[] | select(.value) | .value.busid [0:2] ] | .[]'`)
+local gpu_busid=(`echo "$gpu_detect_json" | jq -r '[ . | to_entries[] | select(.value) | .value.busid [0:2] ] | .[]' | sed '/^00/d'`)
 local busids=''
 local idx=0
 for i in $gpu_worked; do
