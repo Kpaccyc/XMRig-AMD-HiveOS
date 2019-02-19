@@ -1,0 +1,4 @@
+Package: xmrigamd
+Version: 2.12.0
+Architecture: all
+Description: Hive custom miner
