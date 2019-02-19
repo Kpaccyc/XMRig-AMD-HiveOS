@@ -12,15 +12,14 @@ while true; do
     break
 done
 
-
-wget https://github.com/Kpaccyc/XMRig-AMD-HiveOS/blob/master/README.md
-if [ $(cat README.md | grep -i v$CUSTOM_VERSION | wc -l) -eq 0 ];
-  then
-    mv $CUSTOM_CONFIG_FILENAME /hive/miners/custom/;
-    /hive/miners/custom/custom-get https://github.com/Kpaccyc/XMRig-AMD-HiveOS/releases/download/Release/xmrigamd.tar.gz -f;
-    mv /hive/miners/custom/config.conf $CUSTOM_CONFIG_FILENAME;
+wget https://github.com/Kpaccyc/XMRig-AMD-HiveOS/blob/master/xmrig-amd/control
+if [ $(cat control | grep -i "Version: $CUSTOM_VERSION" | wc -l) -eq 0 ];
+	then
+		mv $CUSTOM_CONFIG_FILENAME /hive/miners/custom/;
+		/hive/miners/custom/custom-get https://github.com/Kpaccyc/XMRig-AMD-HiveOS/releases/download/Release/xmrigamd.tar.gz -f;
+		mv /hive/miners/custom/config.conf $CUSTOM_CONFIG_FILENAME;
 fi
-rm -f README.md
+rm -f control
 
 if [ $(dpkg-query -W -f='${Status}' libmicrohttpd-dev 2>/dev/null | grep -c "ok installed") -eq 0 ];
 then
