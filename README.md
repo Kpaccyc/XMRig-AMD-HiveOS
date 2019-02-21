@@ -9,6 +9,8 @@ Used manual at https://github.com/minershive/hiveos-linux/tree/master/hive/custo
 * Binary releases https://github.com/Kpaccyc/XMRig-AMD-HiveOS/releases
 
 ### Upgrade
+### Since version 2.12.0, miner automatically checks the new version and updates.
+
 * stop miner
 * Run at console ```/hive/miners/custom/custom-get https://github.com/Kpaccyc/XMRig-AMD-HiveOS/releases/download/Release/xmrigamd.tar.gz -f```
 * start miner
