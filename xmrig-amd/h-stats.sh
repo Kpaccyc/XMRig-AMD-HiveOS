@@ -17,7 +17,7 @@ gpu=${gpu_busid[$i]}
 busids[idx]=$((16#$gpu))
 idx=$((idx+1))
 done
-local iv=`cat /var/log/miner/xmrigamd/*.log | grep -i 'COMPUTE ERROR' | wc -l`
+local iv=`cat /var/log/miner/custom/xmrigamd.log | grep -i 'COMPUTE ERROR' | wc -l`
 local temp=$(jq '.temp' <<< $gpu_stats)
 local fan=$(jq '.fan' <<< $gpu_stats)
 
